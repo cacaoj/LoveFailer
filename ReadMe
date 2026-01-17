@@ -1,0 +1,45 @@
+# 💘 Blind Date Simulator (Web-Based)
+
+> **Can you win their heart in just 10 minutes?**
+> A lightweight, interactive web game where your dialogue choices determine the outcome of a blind date.
+
+## 📖 Overview
+
+**Blind Date Simulator** is a text-based interactive web game designed to run directly in the browser. Players enter a simulated blind date scenario and must navigate through conversations by selecting the most appropriate responses. Every choice impacts the "Affinity Score," leading to different endings ranging from a romantic success to an awkward goodbye.
+
+## ✨ Key Features
+
+* **Interactive Storytelling:** Experience a branching narrative where your choices matter.
+* **Affinity System:** Real-time tracking of the partner's interest level based on your answers.
+* **Multiple Endings:** Unlock different outcomes (Success, Friend-zone, Failure) based on your final score.
+* **Zero Installation:** Runs purely on HTML, CSS, and vanilla JavaScript. No server required.
+* **Responsive Design:** optimized for both desktop and mobile play.
+
+## 🎮 How to Play
+
+1.  **Start the Game:** Open the web page to begin the blind date.
+2.  **Read the Situation:** Analyze the partner's questions and mood.
+3.  **Make a Choice:** Select 1 out of 3 dialogue options presented on the screen.
+4.  **Check the Vibe:** Watch the "Heart Meter" (Affinity Score) change based on your selection.
+5.  **Reach the Ending:** Complete the conversation to see if you succeeded in winning their heart.
+
+## 🛠️ Tech Stack
+
+* **HTML5:** Structure and semantic markup.
+* **CSS3:** Styling, animations, and responsive layout.
+* **JavaScript (ES6+):** Game logic, state management, and DOM manipulation.
+
+## 🚀 Installation & Setup
+
+Since this is a static web project, you don't need to install any dependencies.
+
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/YOUR-USERNAME/blind-date-sim.git](https://github.com/YOUR-USERNAME/blind-date-sim.git)
+    ```
+2.  **Run the game**
+    * Simply open `index.html` in your preferred web browser (Chrome, Edge, Safari, etc.).
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
