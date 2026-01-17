@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연애고자 탈출기 (Blind Date Survival)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Toast Notification Container -->
+        <div id="toast-container"></div>
+
+        <!-- SCREENS -->
+
+        <!-- 1. Intro Screen -->
+        <section id="intro-screen" class="screen active">
+            <div class="content">
+                <h1 class="main-title">연애고자<br>탈출기</h1>
+                <p class="subtitle">소개팅 서바이벌</p>
+
+                <div class="gender-select">
+                    <p class="guide-text">당신의 성별을 선택하세요</p>
+                    <div class="gender-buttons">
+                        <button class="btn gender-btn" data-gender="male">👨 남자</button>
+                        <button class="btn gender-btn" data-gender="female">👩 여자</button>
+                    </div>
+                </div>
+
+                <div class="character-preview hidden" id="intro-char-box">
+                    <img id="intro-char-img" src="" alt="Partner Character">
+                </div>
+
+                <p class="description">
+                    3분 안에 소개팅 성공하기!<br>
+                    랜덤한 상대방의 마음을 얻어보세요.
+                </p>
+                <button id="start-btn" class="btn primary-btn hidden">게임 시작</button>
+            </div>
+        </section>
+
+        <!-- 2. Quiz Screen -->
+        <section id="quiz-screen" class="screen hidden">
+            <div class="top-bar">
+                <span id="stage-indicator">Stage 1/10</span>
+                <span id="bonus-indicator" class="hidden">✨ Bonus x2</span>
+            </div>
+
+            <div class="question-container">
+                <div class="partner-mini">
+                    <!-- Mini avatar or just stick to text? User asked for image in UI center. -->
+                    <!-- Let's put image above situation text -->
+                    <img id="game-char-img" src="" alt="Partner" class="char-img-mini">
+                </div>
+                <div class="situation-box">
+                    <p id="situation-text">상대방이 약속 시간에 늦었다...</p>
+                </div>
+            </div>
+
+            <div class="options-container">
+                <button class="btn option-btn" data-index="0">A. 괜찮아요 천천히 오세요</button>
+                <button class="btn option-btn" data-index="1">B. 지금 몇 시죠?</button>
+            </div>
+        </section>
+
+        <!-- 3. Result Screen -->
+        <section id="result-screen" class="screen hidden">
+            <div class="content">
+                <h2 class="result-title">최종 결과</h2>
+                <div id="result-grade" class="grade-badge">PERFECT LOVE</div>
+
+                <div class="persona-reveal">
+                    <img id="result-char-img" src="" alt="Partner" class="char-img-result">
+                    <p id="result-reveal-text">그녀/그의 정체는...</p>
+                    <h3 id="persona-name">Power E (핵인싸)</h3>
+                </div>
+
+                <div class="message-box">
+                    <p id="result-message">"우리 당장 여행 가자!"</p>
+                </div>
+
+                <div class="share-container">
+                    <p class="score-text">내 점수: <span id="final-score">8</span>점</p>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="restart-btn" class="btn secondary-btn">다시 도전</button>
+                    <button id="share-btn" class="btn primary-btn">결과 공유</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
